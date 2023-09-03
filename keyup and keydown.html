@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyup and Keydown</title>
+    <!-- css -->
+    <style>
+        #box{
+            height: 100vh;
+        }
+        #box1{
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="box1">Press any key</div>
+    </div>
+    <!-- js -->
+    <script>
+        let box = document.getElementById("box");
+        let box1 = document.getElementById("box1");
+        // addding eventlistener keyup
+        box1.addEventListener("keyup", function(e){
+        box1.style.color = "red";
+        box1.innerText = e.key + "is keyUp";
+        });
+        // adding eventlistener keydown
+        box1.addEventListener("keydown", function(e){
+            box1.style.color = "yellow";
+            box1.innerText = e.key + "is keyDown";
+        });
+    </script>
+</body>
+</html>

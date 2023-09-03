@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom1</title>
+</head>
+<body>
+    <!-- by Id -->
+    <p id="one"><span>welcome</span> Hello</p>
+    <!-- classes -->
+    <ul>
+        <li class="tech">one</li>
+        <li class="tech">two</li>
+        <li class="tech">three</li>    
+    </ul>
+    <!-- tag -->
+    <h4>has</h4>
+    <h4>have</h4>
+    <!-- query selector -->
+    <!-- in the same tag you can take class,id,tag by dot,hash,normally -->
+    <h3>and</h3>
+    <h4 class="class">how</h4>
+    <h4 id="id">when</h4>
+    
+
+    <script>
+        // let var1 = document.getElementById("one");
+        // console.log(var1.innerHTML); // element is attached
+        // console.log(var1.innerText); // the only text will be shown that is present in the element
+        let var2 = document.getElementsByClassName("tech");
+        console.log(var2); //all three catch
+        // to catch particular we will use arrayindex
+        console.log(var2[2].innerText);
+        // assigning a new name and color
+        // var2[2].innerText = "school"
+        // var2[2].style.color = "red"
+        // let var3 = document.getElementsByTagName("h4")
+        // console.log(var3);
+        // query selector
+        // let var4 = document.querySelector(".class")
+        // console.log(var4);
+        // let var4 = document.querySelector("#id")
+        // console.log(var4);
+        // changing classes and id
+    //    var4.className = "fine";
+        //   var4.classList = "finals good";
+        // var4.setAttribute("title" , "ali");
+    </script>
+</body>
+</html>

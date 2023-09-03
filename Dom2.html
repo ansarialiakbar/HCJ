@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 3</title>
+</head>
+<body>
+    <h1>IERT</h1>
+    <p id="id"></p>
+    <button ondblclick="hello()" id="id1">Submit</button>
+    <script>
+        document.addEventListener("mouseenter",hey);
+        function hey(){
+            document.getElementById("id").innerText = "Welcome to clg";
+        }
+        function hello(){
+            document.getElementById("id1").innerText = "Welcome";
+            document.getElementById("id1").style.color = "aqua";
+            document.getElementById("id1").style.backgroundColor = "black";
+            document.getElementById("id1").style.padding = "6px";
+            document.getElementById("id1").style.border = "2px solid red";
+        }
+    </script>
+</body>
+</html>
